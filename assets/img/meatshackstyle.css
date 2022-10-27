@@ -1,0 +1,121 @@
+header {
+    display: block;
+    height:110px;
+    width:100%;
+    margin-left: 0;
+    margin-right: 0;
+    position: fixed;
+    background-color: blanchedalmond;
+}
+.container {
+    width: 100%;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    }
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+    }
+nav {
+    margin-left: 750px;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5px;
+    }
+nav ul li a {
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+    margin-right: 10px; 
+    }
+nav ul li a:hover {
+    color:blue;
+    background-color:greenyellow;
+    }
+main {
+    height: 570px;
+    overflow: hidden;
+    background-color:mintcream;
+    }
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-top: 100px;
+    }
+h1 {
+    color: brown;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight:bolder;
+    display: flex;
+    justify-content: left;
+    padding-top: 5px;
+    margin-left: 200px;
+    }
+.second-column {
+    background-color:moccasin;
+}
+h1.title1 {
+    color: crimson;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    }
+p {
+    color:orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+.products {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+}
+.product1 {
+    height: 90%;
+    width: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    }
+.product2 {
+    height: 80%;
+    width: 40%;
+    padding: 10px;
+    margin-left: -200px;
+    }
+.product3 {
+    height: 70%;
+    width: 30%;
+    padding: 10px;
+    margin-left: 20px;
+    }
+.product4 {
+    height: 60%;
+    width: 50%;
+    padding: 10px;
+    margin-left: -300px;
+    }
+footer {
+    width: 100%;
+    height: 100px;
+    display: Fixed;
+    background-color:black;
+    padding-bottom: 0;
+    }
+.footer-links ul li{
+    display: block;
+    color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1px;
+    font-size: 10px;  
+    margin-top: 2px;  
+}
+
