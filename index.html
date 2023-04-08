@@ -4,56 +4,332 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Meat Shack - Home</title>
+    <title>The Meat Shack | Home</title>
     <link href="./assets/img/meatshackstyle.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="container-fluid">
-                <div class="navbar">
-                    <img src="./assets/img/logo02.jpg" class="logo">
-                        <nav>
-                            <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Product Gallery and Price List</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            </ul>
-                        </nav>
-                </div>
-            </div>
+        <img src="./assets/img/logo01.jpg" class="logo">
+        <div class="searchbar">
+            <input for="search" class="search" placeholder="Search Products"></input>
         </div>
-    </header>
-    <main>
-        <div class="grid-container">
-            <div>
-            <h1 class="title2">Our Products</h1>
-                <div class="products">
-                    <img src="./assets/img/05.jpg" class="product1">
-                    <img src="./assets/img/06.jpg" class="product2">
-                    <img src="./assets/img/07.jpg" class="product3">
-                    <img src="./assets/img/10.jpg" class="product4">
-                </div>
-            </div>
-            <div class="second-column">
-                <h1 class="title1">Hey Everyone!</h1>
-                <p>Para di mahirapan mag-isip ng baon or ulam,  we gotchu 😉
-                    We have here panlasang pinoy selections for you to choose from that guarantee to satisfy your cravings!</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-links">
-            <ul>
-                <li>About Us</li>
-                <li>Site Map</li>
-                <li>Private Policy</li>
-                <li>Terms and Conditions</li>
+        <div class="topnav-container">
+            <ul class="topnav">
+                <li><a href="index.html">All Products</a></li>
+                <li><a href="pork.html">Pork</a></li>
+                <li><a href="beef.html">Beef</a></li>
+                <li><a href="chicken.html">Chicken</a></li>
+                <li><a href="seafood.html">Seafood</a></li>
+                <li><a href="recipes.html">Suggested Recipes</a></li>
             </ul>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </header>
+    <section class="main-container">
+        <div class="main-title">
+            <h1 class="allproducts">All Products</h1>
+                <div class="cards">
+                    <div class="card001">
+                        <img src="./assets/img/inner/001.pork_patties.jpg" alt="pork-patties" class="product001">
+                        <h2 class="title01">Pork Patties</h2>
+                        <p class="price">&#8369 94.50</p>
+                        <p>Available in 250g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue01()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkpatties" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue01()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/002.pork_adobo_cut.JPG" alt="pork-adobocut" class="product001">
+                        <h2 class="title01">Pork Adobo Cut</h2>
+                        <p class="price">&#8369 197.50</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue02()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkadobocut" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue02()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/003.pork_sinigang_cut.JPG" alt="pork-sinigangcut" class="product001">
+                        <h2 class="title01">Pork Sinigang Cut</h2>
+                        <p class="price">&#8369 147.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue03()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkbbqslices" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue04()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/004.pork_bbq_slices.JPG" alt="pork-bbqslices" class="product001">
+                        <h2 class="title01">Pork BBQ Slices</h2>
+                        <p class="price">&#8369 205.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue04()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkbbqslices" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue04()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/005.pork_kasim_wskin.JPG" alt="pork-kasim1" class="product001">
+                        <h2 class="title01">Pork Kasim with Skin</h2>
+                        <p class="price">&#8369 194.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue05()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkkasim" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue05()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/006.pork_tocino.JPG" alt="pork-tocino" class="product001">
+                        <h2 class="title01">Pork Tocino</h2>
+                        <p class="price">&#8369 120.00</p>
+                        <p>Available in 250g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue06()">-</button>
+                            <input type="text" class="quantity" id="quantity-porktocino" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue06()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/007.pork_ground.JPG" alt="pork-ground" class="product001">
+                        <h2 class="title01">Ground Pork</h2>
+                        <p class="price">&#8369 223.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue07()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkground" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue07()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/008.pork_chop.JPG" alt="pork-chop" class="product001">
+                        <h2 class="title01">Pork Chop</h2>
+                        <p class="price">&#8369 198.75</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue08()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkchops" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue08()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/009.pork_spareribs.JPG" alt="pork-spareribs" class="product001">
+                        <h2 class="title01">Pork Spareribs</h2>
+                        <p class="price">&#8369 221.50</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue09()">-</button>
+                            <input type="text" class="quantity" id="quantity-porkspareribs" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue09()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/010.beef_papaitan.JPG" alt="beef-papaitan" class="product001">
+                        <h2 class="title01">Beef Papaitan</h2>
+                        <p class="price">&#8369 340.00</p>
+                        <p>Available in 320g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue10()">-</button>
+                            <input type="text" class="quantity" id="quantity-beefpapaitan" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue10()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/011.beef_ground.JPG" alt="beef-ground" class="product001">
+                        <h2 class="title01">Ground Beef</h2>
+                        <p class="price">&#8369 320.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue11()">-</button>
+                            <input type="text" class="quantity" id="quantity-beefground" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue11()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/012.beef_tbone.JPG" alt="beef-tbone" class="product001">
+                        <h2 class="title01">Beef Tbone Steak</h2>
+                        <p class="price">&#8369 350.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue12()">-</button>
+                            <input type="text" class="quantity" id="quantity-beeftbone" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue12()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/013.beef_sirloin.JPG" alt="beef-sirloin" class="product001">
+                        <h2 class="title01">Beef Sirloin</h2>
+                        <p class="price">&#8369 323.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue13()">-</button>
+                            <input type="text" class="quantity" id="quantity-beefsirloin" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue13()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/014.beef_tapa.JPG" alt="beef-tapa" class="product001">
+                        <h2 class="title01">Beef Tapa</h2>
+                        <p class="price">&#8369 124.00</p>
+                        <p>Available in 220g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue14()">-</button>
+                            <input type="text" class="quantity" id="quantity-beeftapa" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue14()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/015.chicken_whole.JPG" alt="chicken-whole" class="product001">
+                        <h2 class="title01">Whole Chicken</h2>
+                        <p class="price">&#8369 200.00</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue15()">-</button>
+                            <input type="text" class="quantity" id="quantity-chickenwhole" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue15()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/016.chicken_gizzard.JPG" alt="chicken-gizzard" class="product001">
+                        <h2 class="title01">Chicken Gizzard</h2>
+                        <p class="price">&#8369 110.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue16()">-</button>
+                            <input type="text" class="quantity" id="quantity-chickengizzard" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue16()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/017.chicken_liver.JPG" alt="chicken-liver" class="product001">
+                        <h2 class="title01">Chicken Liver</h2>
+                        <p class="price">&#8369 115.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue17()">-</button>
+                            <input type="text" class="quantity" id="quantity-chickenliver" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue17()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/018.chicken_fillet.JPG" alt="chicken-fillet" class="product001">
+                        <h2 class="title01">Chicken Breast Fillet</h2>
+                        <p class="price">&#8369 135.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue18()">-</button>
+                            <input type="text" class="quantity" id="quantity-chickenbreast" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue18()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/019.chicken_wings.JPG" alt="chicken-wings" class="product001">
+                        <h2 class="title01">Chicken Wings</h2>
+                        <p class="price">&#8369 116.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue19()">-</button>
+                            <input type="text" class="quantity" id="quantity-chickenwings" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue19()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/020.chicken_drumstick.JPG" alt="chicken-drumstick" class="product001">
+                        <h2 class="title01">Chicken Drumstick</h2>
+                        <p class="price">&#8369 110.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue20()">-</button>
+                            <input type="text" class="quantity" id="quantity-chickendrumstick" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue20()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/021.seafood_salmonsteak.JPG" alt="seafood-salmonsteak" class="product001">
+                        <h2 class="title01">Salmon Steak</h2>
+                        <p class="price">&#8369 1,250.00/p>
+                        <p>Per kg</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue21()">-</button>
+                            <input type="text" class="quantity" id="quantity-salmonsteak" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue21()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/022.seafood_creamdory.JPG" alt="seafood-creamdory" class="product001">
+                        <h2 class="title01">Creamdory Fillet</h2>
+                        <p class="price">&#8369 207.00</p>
+                        <p>Available in 1kg</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue22()">-</button>
+                            <input type="text" class="quantity" id="quantity-creamdory" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue22()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/023.seafood_shrimp.JPG" alt="seafood-shrimp" class="product001">
+                        <h2 class="title01">Shrimp</h2>
+                        <p class="price">&#8369 250.00</p>
+                        <p>Available in 250g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue23()">-</button>
+                            <input type="text" class="quantity" id="quantity-shrimp" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue23()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/024.seafood_tunasteak.JPG" alt="seafood-tunasteak" class="product001">
+                        <h2 class="title01">Tuna Steak</h2>
+                        <p class="price">&#8369 350.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue24()">-</button>
+                            <input type="text" class="quantity" id="quantity-tunasteak" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue24()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                    <div class="card001">
+                        <img src="./assets/img/inner/025.seafood_squidrings.JPG" alt="seafood-squidring" class="product001">
+                        <h2 class="title01">Squid Ring</h2>
+                        <p class="price">&#8369 200.00</p>
+                        <p>Available in 500g</p>
+                        <div class="container-counter">
+                            <button class="qty-minus" onclick="decreaseValue25()">-</button>
+                            <input type="text" class="quantity" id="quantity-squidring" value="0" max="50" />
+                            <button class="qty-plus" onclick="increaseValue25()">+</button>
+                        </div>
+                        <p><button class="addtocart" id="cart">Add to Cart</button></p>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
